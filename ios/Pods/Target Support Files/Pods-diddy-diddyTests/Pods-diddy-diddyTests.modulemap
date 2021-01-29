@@ -1,6 +1,0 @@
-module Pods_diddy_diddyTests {
-  umbrella header "Pods-diddy-diddyTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
