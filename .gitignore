@@ -165,3 +165,4 @@ ios/GoogleService-info.plist
 .env
 ios/Podfile.lock
 yarn.lock
+ios/Pods
