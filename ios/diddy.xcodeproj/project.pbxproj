@@ -20,6 +20,24 @@
 		5E6B255EDD6D9D2239570223 /* libPods-diddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E4D9FB98CA22BD4D76403D /* libPods-diddy.a */; };
 		BB7591C1BA2B2AA6AA65510E /* libPods-diddy-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C9919190F791919D5D942C /* libPods-diddy-tvOSTests.a */; };
 		EF404F1199CA1D1DC1F79AA2 /* libPods-diddy-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D01C7A5ECBAD9F4881077D63 /* libPods-diddy-tvOS.a */; };
+		D95AE7841F184DFAA77B4C80 /* Tomorrow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAEEAF041642E5BC1C281D /* Tomorrow-Black.ttf */; };
+		D4D72113B9F144438B01BD99 /* Tomorrow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BE81ACF6BD5498F88C67C2D /* Tomorrow-BlackItalic.ttf */; };
+		F03980E10583460D94BBFF47 /* Tomorrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 625D84817EE640FCBBCE685D /* Tomorrow-Bold.ttf */; };
+		72D8AAAAEB06413C98B98352 /* Tomorrow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFDC5275ABB24DD888354D30 /* Tomorrow-BoldItalic.ttf */; };
+		0DDADF0587CD4841BF54E011 /* Tomorrow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16A7FCB6B5614501AF5DB77C /* Tomorrow-ExtraBold.ttf */; };
+		6EE6F1CD0DDE4731AB5AF93B /* Tomorrow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E30F60314BCBB34E11E6 /* Tomorrow-ExtraBoldItalic.ttf */; };
+		4F6BA2638C4D4050A53CFBC3 /* Tomorrow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C56A5B6F56E14CCBB1D2D5AC /* Tomorrow-ExtraLight.ttf */; };
+		1B92864DAF0D4574B93FA74B /* Tomorrow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB11EDD95AFF4D0C922DD775 /* Tomorrow-ExtraLightItalic.ttf */; };
+		515E40AA0A5B45D0B381478F /* Tomorrow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CD905922CBF4A63A193BDD5 /* Tomorrow-Italic.ttf */; };
+		EEEFFDEEF32840698C1E6850 /* Tomorrow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0A5A93DDF4F4022B92D699E /* Tomorrow-Light.ttf */; };
+		2389E65B119B4B19AC88BEC6 /* Tomorrow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DF41DCB20EE41039C9A6307 /* Tomorrow-LightItalic.ttf */; };
+		041518E087C14514AD9889DD /* Tomorrow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC0E6A1FDE41DAA9BFD22A /* Tomorrow-Medium.ttf */; };
+		4D0E80A05BF6419CBD7E5B86 /* Tomorrow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92576C87DF724ABFA96EF0D5 /* Tomorrow-MediumItalic.ttf */; };
+		989DA847CD6D4765974381B8 /* Tomorrow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 425448392D004081B10B20EC /* Tomorrow-Regular.ttf */; };
+		A351BAFFF9C84865A1B47E99 /* Tomorrow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F43FCA2CC354C1D991E367F /* Tomorrow-SemiBold.ttf */; };
+		91BAD7D5DB07487B86888EDD /* Tomorrow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC022C2A35684FF2B492CDAE /* Tomorrow-SemiBoldItalic.ttf */; };
+		97DDBC4A132B4BDAA893FBB6 /* Tomorrow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76C369223517413CAE17AE52 /* Tomorrow-Thin.ttf */; };
+		2B35853C90EC495D8A39247D /* Tomorrow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 186140C8814E41C28CF1167C /* Tomorrow-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +85,24 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEFADE0B40BD08976AD9B0B4 /* Pods-diddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diddyTests.debug.xcconfig"; path = "Target Support Files/Pods-diddyTests/Pods-diddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FAAEEAF041642E5BC1C281D /* Tomorrow-Black.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Black.ttf"; path = "../src/assets/fonts/Tomorrow-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BE81ACF6BD5498F88C67C2D /* Tomorrow-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-BlackItalic.ttf"; path = "../src/assets/fonts/Tomorrow-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		625D84817EE640FCBBCE685D /* Tomorrow-Bold.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Bold.ttf"; path = "../src/assets/fonts/Tomorrow-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BFDC5275ABB24DD888354D30 /* Tomorrow-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-BoldItalic.ttf"; path = "../src/assets/fonts/Tomorrow-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16A7FCB6B5614501AF5DB77C /* Tomorrow-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Tomorrow-ExtraBold.ttf"; path = "../src/assets/fonts/Tomorrow-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F28E30F60314BCBB34E11E6 /* Tomorrow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Tomorrow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C56A5B6F56E14CCBB1D2D5AC /* Tomorrow-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Tomorrow-ExtraLight.ttf"; path = "../src/assets/fonts/Tomorrow-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB11EDD95AFF4D0C922DD775 /* Tomorrow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Tomorrow-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CD905922CBF4A63A193BDD5 /* Tomorrow-Italic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Italic.ttf"; path = "../src/assets/fonts/Tomorrow-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0A5A93DDF4F4022B92D699E /* Tomorrow-Light.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Light.ttf"; path = "../src/assets/fonts/Tomorrow-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0DF41DCB20EE41039C9A6307 /* Tomorrow-LightItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-LightItalic.ttf"; path = "../src/assets/fonts/Tomorrow-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7FDC0E6A1FDE41DAA9BFD22A /* Tomorrow-Medium.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Medium.ttf"; path = "../src/assets/fonts/Tomorrow-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		92576C87DF724ABFA96EF0D5 /* Tomorrow-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-MediumItalic.ttf"; path = "../src/assets/fonts/Tomorrow-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		425448392D004081B10B20EC /* Tomorrow-Regular.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Regular.ttf"; path = "../src/assets/fonts/Tomorrow-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F43FCA2CC354C1D991E367F /* Tomorrow-SemiBold.ttf */ = {isa = PBXFileReference; name = "Tomorrow-SemiBold.ttf"; path = "../src/assets/fonts/Tomorrow-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC022C2A35684FF2B492CDAE /* Tomorrow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Tomorrow-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76C369223517413CAE17AE52 /* Tomorrow-Thin.ttf */ = {isa = PBXFileReference; name = "Tomorrow-Thin.ttf"; path = "../src/assets/fonts/Tomorrow-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		186140C8814E41C28CF1167C /* Tomorrow-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Tomorrow-ThinItalic.ttf"; path = "../src/assets/fonts/Tomorrow-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +201,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				8875DB23A76057A01ACA3F29 /* Pods */,
+				E6B43882B8F144A98A6E2047 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +234,32 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		E6B43882B8F144A98A6E2047 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2FAAEEAF041642E5BC1C281D /* Tomorrow-Black.ttf */,
+				2BE81ACF6BD5498F88C67C2D /* Tomorrow-BlackItalic.ttf */,
+				625D84817EE640FCBBCE685D /* Tomorrow-Bold.ttf */,
+				BFDC5275ABB24DD888354D30 /* Tomorrow-BoldItalic.ttf */,
+				16A7FCB6B5614501AF5DB77C /* Tomorrow-ExtraBold.ttf */,
+				2F28E30F60314BCBB34E11E6 /* Tomorrow-ExtraBoldItalic.ttf */,
+				C56A5B6F56E14CCBB1D2D5AC /* Tomorrow-ExtraLight.ttf */,
+				FB11EDD95AFF4D0C922DD775 /* Tomorrow-ExtraLightItalic.ttf */,
+				0CD905922CBF4A63A193BDD5 /* Tomorrow-Italic.ttf */,
+				A0A5A93DDF4F4022B92D699E /* Tomorrow-Light.ttf */,
+				0DF41DCB20EE41039C9A6307 /* Tomorrow-LightItalic.ttf */,
+				7FDC0E6A1FDE41DAA9BFD22A /* Tomorrow-Medium.ttf */,
+				92576C87DF724ABFA96EF0D5 /* Tomorrow-MediumItalic.ttf */,
+				425448392D004081B10B20EC /* Tomorrow-Regular.ttf */,
+				4F43FCA2CC354C1D991E367F /* Tomorrow-SemiBold.ttf */,
+				DC022C2A35684FF2B492CDAE /* Tomorrow-SemiBoldItalic.ttf */,
+				76C369223517413CAE17AE52 /* Tomorrow-Thin.ttf */,
+				186140C8814E41C28CF1167C /* Tomorrow-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +348,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +401,24 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				D95AE7841F184DFAA77B4C80 /* Tomorrow-Black.ttf in Resources */,
+				D4D72113B9F144438B01BD99 /* Tomorrow-BlackItalic.ttf in Resources */,
+				F03980E10583460D94BBFF47 /* Tomorrow-Bold.ttf in Resources */,
+				72D8AAAAEB06413C98B98352 /* Tomorrow-BoldItalic.ttf in Resources */,
+				0DDADF0587CD4841BF54E011 /* Tomorrow-ExtraBold.ttf in Resources */,
+				6EE6F1CD0DDE4731AB5AF93B /* Tomorrow-ExtraBoldItalic.ttf in Resources */,
+				4F6BA2638C4D4050A53CFBC3 /* Tomorrow-ExtraLight.ttf in Resources */,
+				1B92864DAF0D4574B93FA74B /* Tomorrow-ExtraLightItalic.ttf in Resources */,
+				515E40AA0A5B45D0B381478F /* Tomorrow-Italic.ttf in Resources */,
+				EEEFFDEEF32840698C1E6850 /* Tomorrow-Light.ttf in Resources */,
+				2389E65B119B4B19AC88BEC6 /* Tomorrow-LightItalic.ttf in Resources */,
+				041518E087C14514AD9889DD /* Tomorrow-Medium.ttf in Resources */,
+				4D0E80A05BF6419CBD7E5B86 /* Tomorrow-MediumItalic.ttf in Resources */,
+				989DA847CD6D4765974381B8 /* Tomorrow-Regular.ttf in Resources */,
+				A351BAFFF9C84865A1B47E99 /* Tomorrow-SemiBold.ttf in Resources */,
+				91BAD7D5DB07487B86888EDD /* Tomorrow-SemiBoldItalic.ttf in Resources */,
+				97DDBC4A132B4BDAA893FBB6 /* Tomorrow-Thin.ttf in Resources */,
+				2B35853C90EC495D8A39247D /* Tomorrow-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
