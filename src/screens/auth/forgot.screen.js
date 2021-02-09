@@ -4,8 +4,9 @@ import LoginForm from '../../components/forms/login.form';
 import { BackIcon, FaceBookIcon, AppleIcon } from '../../components/icons.component';
 import mainStyles from '../../utils/main.style';
 import LoginHeader from '../../components/loginHeader.component';
+import ForgotForm from '../../components/forms/forgot.form';
 
-const LoginScreen = ({ navigation }) => {
+const ForgotScreen = ({ navigation }) => {
   useEffect(()=>{ 
     console.log('sdsdsd');
   }, []);
@@ -16,18 +17,12 @@ const LoginScreen = ({ navigation }) => {
       <LoginHeader navigation={navigation} />
     </View>
     <View style={styles.main}>
-      <View style={{flex: 1}}>
-        <Text style={styles.title}>Welcome Back!</Text>
-        <TouchableOpacity style={styles.faceBook}>
-          <FaceBookIcon /><Text style={styles.faceBookText}>Continue With Facebook</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.appleView}>
-          <AppleIcon /><Text style={styles.appleText}>Continue With Apple</Text>
-        </TouchableOpacity>
+      <View style={{flex:1}}>
+        <Text style={styles.title}>Forgot Password!</Text>
       </View>
-      <View style={{flex:2}}>
-        <Text style={styles.emailText}>Or log in with email</Text>
-        <LoginForm navigation={navigation} />
+      <View style={{flex:5}}>
+        <Text style={styles.emailText}>Enter email to  reset account password</Text>
+        <ForgotForm />
       </View>
       
     </View>
@@ -120,4 +115,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default LoginScreen;
+export default ForgotScreen;

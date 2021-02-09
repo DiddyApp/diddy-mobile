@@ -24,7 +24,7 @@ const SignUpScreen = ({ navigation }) => {
       </View>
       <View style={{flex:2}}>
         <Text style={styles.emailText}>Or sign up with email</Text>
-        <SignUpForm />
+        <SignUpForm navigation={navigation} />
       </View>
       
     </View>

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import { BackIcon } from './icons.component';
 
 const LoginHeader = ({navigation: { goBack } }) => {
