@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
-const FormInput = ({onChangeText, onBlur, value, placeholder, style}) => {
+const FormInput = ({secureTextEntry=false, onChangeText, onBlur, value, placeholder, style}) => {
     return(
         <TextInput
             onChangeText={onChangeText}
@@ -9,6 +9,7 @@ const FormInput = ({onChangeText, onBlur, value, placeholder, style}) => {
             value={value}
             style={{...styles.input, style}}
             placeholder={placeholder}
+            secureTextEntry={secureTextEntry} 
         />
     )
 }
