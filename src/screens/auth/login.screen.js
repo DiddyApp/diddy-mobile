@@ -1,19 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import LoginForm from '../../components/forms/login.form';
-import { BackIcon, FaceBookIcon, AppleIcon } from '../../components/icons.component';
+import { FaceBookIcon, AppleIcon } from '../../components/icons.component';
 import mainStyles from '../../utils/main.style';
-import LoginHeader from '../../components/loginHeader.component';
+import AuthHeader from '../../components/headers/auth.header';
 
 const LoginScreen = ({ navigation }) => {
-  useEffect(()=>{ 
-    console.log('sdsdsd');
-  }, []);
-
   return (
   <View style={styles.container}>
     <View style={styles.backView}>
-      <LoginHeader navigation={navigation} />
+      <AuthHeader navigation={navigation} />
     </View>
     <View style={styles.main}>
       <View style={{flex: 1}}>
