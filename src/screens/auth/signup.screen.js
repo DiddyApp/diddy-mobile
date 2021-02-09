@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import LoginForm from '../../components/forms/login.form';
+import SignUpForm from '../../components/forms/signup.form';
 import { BackIcon, FaceBookIcon, AppleIcon } from '../../components/icons.component';
 import mainStyles from '../../utils/main.style';
 import LoginHeader from '../../components/loginHeader.component';
 
-const LoginScreen = ({ navigation }) => {
-  useEffect(()=>{ 
-    console.log('sdsdsd');
-  }, []);
+const SignUpScreen = ({ navigation }) => {
 
   return (
   <View style={styles.container}>
@@ -17,7 +14,7 @@ const LoginScreen = ({ navigation }) => {
     </View>
     <View style={styles.main}>
       <View style={{flex: 1}}>
-        <Text style={styles.title}>Welcome Back!</Text>
+        <Text style={styles.title}>Create your account!</Text>
         <TouchableOpacity style={styles.faceBook}>
           <FaceBookIcon /><Text style={styles.faceBookText}>Continue With Facebook</Text>
         </TouchableOpacity>
@@ -26,8 +23,8 @@ const LoginScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={{flex:2}}>
-        <Text style={styles.emailText}>Or log in with email</Text>
-        <LoginForm />
+        <Text style={styles.emailText}>Or sign up with email</Text>
+        <SignUpForm />
       </View>
       
     </View>
@@ -120,4 +117,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default LoginScreen;
+export default SignUpScreen;

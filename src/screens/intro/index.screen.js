@@ -8,13 +8,13 @@ import contents from '../../utils/introContents';
 const bgIntroImg = require('../../assets/bgImage.png');
 
 // const contents = 
-const IntroScreen = () => {
+const IntroScreen = ({ navigation }) => {
   const [active, setActive] = useState(0);
   const onClickPress = () => {
     if(active !== (contents.length-1)){
       setActive(active+1);
     }else{
-      console.log('login');
+      navigation.navigate('SignUp');
     }
   }
   return (
@@ -34,7 +34,13 @@ const IntroScreen = () => {
           <Text style={styles.buttonText}>{contents[active].button}</Text>
           <NextIcon />
         </TouchableOpacity>
-        {active === (contents.length -1) && <Text style={styles.loginPreText}>Already have an Account login?</Text>}
+        {active === (contents.length -1) && 
+          <View style={{flexDirection:'row', textAlign: 'center', justifyContent: 'center'}}>
+            <Text style={styles.loginPreText}>Already have an account?</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
+              <Text style={{...styles.loginPreText, color: '#333'}}> Login</Text>
+            </TouchableOpacity>
+          </View>}
       </View>
     </View>
   );
@@ -70,7 +76,7 @@ const styles = StyleSheet.create({
     color: '#333333'
   },
   description:{
-    paddingTop: 40,
+    paddingTop: 30,
     textAlign: 'center',
     fontStyle: 'normal',
     fontSize: 18,
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
   button:{
     flexDirection:'row',
     justifyContent: 'space-between',
-    marginTop: 50,
+    marginTop: 30,
     backgroundColor: '#333333',
     borderRadius: 38,
     padding: 20
@@ -98,13 +104,14 @@ const styles = StyleSheet.create({
     letterSpacing: 0.2,
   },
   loginPreText:{
-    padding: 10,
+    paddingTop: 10,
     fontWeight: 'normal',
     fontSize: 14,
     lineHeight: 20,
     textAlign: 'center',
     alignItems: 'center',
     letterSpacing: 0.2,
+    color: 'rgba(51, 51, 51, 0.5)'
   }
 });
 export default IntroScreen;
