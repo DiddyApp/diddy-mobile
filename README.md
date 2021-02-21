@@ -19,8 +19,8 @@ cd diddy-mobile
 # Install npm dependencies
 yarn
 
-# Install Pod
-yarn pod:install
+# Setup App
+yarn app:setup
 ```
 ## Usage
 ```ssh
