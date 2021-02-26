@@ -5,6 +5,7 @@ import SignUpScreen from '../screens/auth/signup.screen';
 import WelcomeScreen from '../screens/intro/index.screen';
 import SplashScreen from '../screens/intro/splash.screen';
 import ForgotScreen from  '../screens/auth/forgot.screen';
+import createGoalScreen from '../screens/intro/creategoal.screen';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ const AuthNavigation = () => {
             <Stack.Screen name="SignUp" component={SignUpScreen} />
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="Forgot" component={ForgotScreen} />
+          <Stack.Screen name="createGoal" component={createGoalScreen}  />
         </Stack.Navigator>
     </>
   );

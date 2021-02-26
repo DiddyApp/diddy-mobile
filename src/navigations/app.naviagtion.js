@@ -7,12 +7,12 @@ const isLoggedIn=false;
 
 const AppNavigation = () => {
   return (
-    <>{!isLoggedIn ? 
+    <>{!isLoggedIn && 
         <NavigationContainer>
           <AuthNavigation />
-        </NavigationContainer>
+        {/* </NavigationContainer>
         :
-        <NavigationContainer>
+        <NavigationContainer> */}
           <MainNavigation />
         </NavigationContainer>
       }
