@@ -22,40 +22,19 @@ const FormButton = ({title, styleButton, styleText, onPress, Image }) => {
         </TouchableOpacity>
     )
 }
-
-const styles = StyleSheet.create({
-    input:{
-        height: 54,
-        borderColor: '#333',
-        backgroundColor: '#EFF0F2',
-        borderRadius: 14,
-        padding: 20,
-        marginTop: 10,
-        marginBottom: 10
-    },
-    button:{
-      flexDirection:'row',
-      justifyContent: 'space-between',
-      marginTop: 50,
-      backgroundColor: '#333333',
-      borderRadius: 38,
-      padding: 20,
-      marginTop: 30,
-      marginBottom: 10
-    },
-    buttonText: {
-      color:'#FFFFFF',
-      fontStyle: 'normal',
-      fontWeight: 'bold',
-      fontSize: 16,
-      lineHeight: 20,
-      textAlign: 'center',
-      letterSpacing: 0.2,
-    },
-})
-
+const FormDate = ({onChangeText, onBlur, value, placeholder, style}) => {
+   return(
+        <DatePicker
+            date={value}
+            onDateChange={onChangeText}
+            onBlur={onBlur}
+            mode="date"
+        />
+    )
+}
 
 export {
     FormInput,
-    FormButton
+    FormButton,
+    FormDate
 }

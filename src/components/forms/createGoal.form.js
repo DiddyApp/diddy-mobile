@@ -25,11 +25,10 @@ const CreateGoalForm = ({ navigation }) => {
                     value={values.email}
                     placeholder='Enter main goal (e.g Play Guitar) '
                 />
-                <FormInput 
+                <FormDate
                     onChangeText={handleChange('date')}
                     onBlur={handleBlur('date')}
-                    value={values.email}
-                    placeholder='Date'
+                    value={values.date}
                 />
                 <View style={{position:'absolute', right:20, top: 20}}>
                     {values.email ? <Donemark />: null}
