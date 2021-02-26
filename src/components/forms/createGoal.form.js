@@ -8,7 +8,8 @@ const CreateGoalForm = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false);
     const { handleBlur, handleChange, handleSubmit, values} = useFormik({
       initialValues: {
-        email: ''
+        goal: '',
+        date: ''
       },
       onSubmit: values => {
         alert(JSON.stringify(values, null, 2));
@@ -19,16 +20,22 @@ const CreateGoalForm = ({ navigation }) => {
         <View style={styles.formView}>
             <View style={{position:'relative'}}>
                 <FormInput 
-                    onChangeText={handleChange('email')}
-                    onBlur={handleBlur('email')}
+                    onChangeText={handleChange('goal')}
+                    onBlur={handleBlur('goal')}
                     value={values.email}
-                    placeholder='Email address'
+                    placeholder='Enter main goal (e.g Play Guitar) '
+                />
+                <FormInput 
+                    onChangeText={handleChange('date')}
+                    onBlur={handleBlur('date')}
+                    value={values.email}
+                    placeholder='Date'
                 />
                 <View style={{position:'absolute', right:20, top: 20}}>
                     {values.email ? <Donemark />: null}
                 </View>
             </View>
-            <FormButton title="Reset" onPress={handleSubmit} />
+            <FormButton title="Create Goal" onPress={handleSubmit} />
         </View>
     </View>
     )

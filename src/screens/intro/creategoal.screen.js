@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
 import { CreateGoalIcon, NextIcon } from '../../components/icons.component';
-// import { bgIntroImg } from '../../assets/assets';
-import IntroSlider from '../../components/introslider.component';
-import contents from '../../utils/introContents';
+import CreateGoalForm from '../../components/forms/createGoal.form';
 
 const bgIntroImg = require('../../assets/bgImage.png');
 
@@ -21,6 +19,9 @@ const createGoalScreen = ({ navigation }) => {
         <View style={{flex:2}}>
             <View style={styles.textInfo}>
                 <Text style={styles.title}>Create Your     First Main Goal</Text>
+            {/* </View> */}
+            {/* <View style={{flex: 6, padding: 30}}> */}
+                <CreateGoalForm navigation={navigation} />
             </View>
         </View>
     </View>
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   textInfo:{
-    flex: 2, 
+    flex: 1, 
     height: 100,
     padding: 40
   },
