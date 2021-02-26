@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useFormik } from 'formik';
-import { FormButton, FormInput } from './form.component';
+import { FormButton, FormInput, FormDate } from './form.component';
 import { Donemark } from '../icons.component';
 
 const CreateGoalForm = ({ navigation }) => {

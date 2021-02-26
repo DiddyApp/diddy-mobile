@@ -14,7 +14,8 @@ const SignForm = ({ navigation }) => {
         password: ''
       },
       onSubmit: values => {
-        alert(JSON.stringify(values, null, 2));
+        // alert(JSON.stringify(values, null, 2));
+        navigation.navigate('createGoal');
       },
     });
     // console.log("here-login", values)
