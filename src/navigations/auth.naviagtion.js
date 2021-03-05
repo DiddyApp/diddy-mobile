@@ -8,23 +8,24 @@ import ForgotScreen from  '../screens/auth/forgot.screen';
 import createGoalScreen from '../screens/intro/creategoal.screen';
 
 const Stack = createStackNavigator();
+const routes = [
+  { name: 'Splash', component: SplashScreen },
+  { name: 'Welcome', component: WelcomeScreen },
+  { name: 'SignUp', component: SignUpScreen },
+  { name: 'Login', component: LoginScreen },
+  { name: 'Forgot', component: ForgotScreen }
+]
 
 const AuthNavigation = () => {
   return (
     <>
-        <Stack.Navigator
-        screenOptions={{
-            headerShown: false,
-            initialRouteName: 'Splash',
-            independent: true
-          }}>
-            <Stack.Screen name="Splash" component={SplashScreen}  />
-            <Stack.Screen name="Welcome" component={WelcomeScreen}  />
-            <Stack.Screen name="SignUp" component={SignUpScreen} />
-            <Stack.Screen name="Login" component={LoginScreen} />
-            <Stack.Screen name="Forgot" component={ForgotScreen} />
-          <Stack.Screen name="createGoal" component={createGoalScreen}  />
-        </Stack.Navigator>
+      <Stack.Navigator screenOptions={{
+        headerShown: false,
+        initialRouteName: 'Splash',
+        independent: true
+      }}>
+        {routes.map((r, i) => <Stack.Screen key={i} name={r.name} component={r.component}  />)}
+      </Stack.Navigator>
     </>
   );
 }
