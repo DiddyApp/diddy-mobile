@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
-import { NextIcon } from '../../components/icons.component';
-// import { bgIntroImg } from '../../assets/assets';
-import IntroSlider from '../../components/introslider.component';
-import contents from '../../utils/introContents';
-
-const bgIntroImg = require('../../assets/bgImage.png');
+import React, { useEffect } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { useSelector } from 'react-redux';
 
 // const contents = 
 const SplashScreen = ({navigation}) => {
-  const [active, setActive] = useState(0);
+  const state = useSelector(state => state.counter);
+  console.log('state===>', state);
   useEffect(()=>{
     setTimeout(()=>{
         navigation.navigate('Welcome');
