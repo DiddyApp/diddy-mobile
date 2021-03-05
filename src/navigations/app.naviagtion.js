@@ -2,14 +2,15 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MainNavigation from './main.naviagtion';
 import AuthNavigation from './auth.naviagtion';
-
-const isLoggedIn=false;
+import { useSelector } from 'react-redux';
 
 const AppNavigation = () => {
+  const state = useSelector(state=>state.auth);
+  console.log(state);
   return (
     <>
       <NavigationContainer>
-        {!isLoggedIn ?
+        {!state.isLoggedIn ?
           <AuthNavigation />
         :
           <MainNavigation /> 

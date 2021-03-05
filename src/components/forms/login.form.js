@@ -4,6 +4,17 @@ import { useFormik } from 'formik';
 import { FormButton, FormInput } from './form.component';
 import { Donemark, EyeVisibleOff, EyeVisibleOn } from '../icons.component';
 import { TouchableHighlight } from 'react-native-gesture-handler';
+import { useDispatch } from 'react-redux';
+import { Login } from '../../redux/actions/auth.action';
+const userData = {
+    userId: '12345678',
+    token: 'axfaslfkhlashflkasf',
+    refreshToken: 'asklfhsalkfjasf',
+    expiresOn: '24h',
+    data:{
+        name: 'John Doe'
+    },
+}
 
 const LoginForm = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false);
@@ -14,9 +25,14 @@ const LoginForm = ({ navigation }) => {
       },
       onSubmit: values => {
         // alert(JSON.stringify(values, null, 2));
-        navigation.navigate('createGoal');
+        // Login(values);
+        return loginUser();
+        // navigation.navigate('createGoal');
       },
     });
+    const loginUser = () => {
+        return Login(values);
+    }
     return(
     <View>
         <View style={styles.formView}>
