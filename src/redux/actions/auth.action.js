@@ -6,7 +6,8 @@ const setLoginState = (loginData) => {
       payload: loginData,
     };
 };
-const Login = (data) => {
+
+function loginAction (data){
     let { email, password } = data;
     return dispatch => {
         console.log(email, password)
@@ -14,7 +15,7 @@ const Login = (data) => {
     }
     function success(user) { return { type: SET_LOGIN_STATE, user } }
 }
-export default {
+export default actions = {
     setLoginState,
-    Login
+    loginAction
 }

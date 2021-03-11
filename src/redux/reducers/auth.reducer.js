@@ -2,6 +2,7 @@ import { SET_LOGIN_STATE } from '../constants/auth.constant';
 
 const initialState = {
     isLoggedIn: false,
+    onBoarded: false,
     userId: '',
     token: '',
     refreshToken: '',

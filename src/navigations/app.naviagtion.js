@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 const AppNavigation = () => {
   const state = useSelector(state=>state.auth);
-  console.log(state);
+  console.log('states==>', state);
   return (
     <>
       <NavigationContainer>

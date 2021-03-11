@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import SignUpForm from '../../components/forms/signup.form';
 import { FaceBookIcon, AppleIcon } from '../../components/icons.component';
@@ -6,7 +6,6 @@ import mainStyles from '../../utils/main.style';
 import AuthHeader from '../../components/headers/auth.header';
 
 const SignUpScreen = ({ navigation }) => {
-
   return (
   <View style={styles.container}>
     <View style={styles.backView}>

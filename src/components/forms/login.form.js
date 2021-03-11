@@ -5,7 +5,7 @@ import { FormButton, FormInput } from './form.component';
 import { Donemark, EyeVisibleOff, EyeVisibleOn } from '../icons.component';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 import { useDispatch } from 'react-redux';
-import { Login } from '../../redux/actions/auth.action';
+import authActions from '../../redux/actions/auth.action';
 const userData = {
     userId: '12345678',
     token: 'axfaslfkhlashflkasf',
@@ -18,20 +18,22 @@ const userData = {
 
 const LoginForm = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false);
+    const dispatch = useDispatch();
     const { handleBlur, handleChange, handleSubmit, values} = useFormik({
       initialValues: {
         email: '',
         password: ''
       },
       onSubmit: values => {
-        // alert(JSON.stringify(values, null, 2));
         // Login(values);
-        return loginUser();
+        return loginUser(); 
+        // alert(JSON.stringify(values, null, 2));
         // navigation.navigate('createGoal');
       },
     });
     const loginUser = () => {
-        return Login(values);
+        dispatch(authActions.loginAction(values));
+        return;
     }
     return(
     <View>
