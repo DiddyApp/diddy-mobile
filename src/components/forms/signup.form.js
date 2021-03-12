@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import { FormButton, FormInput } from './form.component';
 import { BackIcon, Donemark, EyeVisibleOff, EyeVisibleOn } from '../icons.component';
 import { TouchableHighlight } from 'react-native-gesture-handler';
+import authActions from '../../redux/actions/auth.action';
 
 const SignForm = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false);
@@ -14,11 +15,13 @@ const SignForm = ({ navigation }) => {
         password: ''
       },
       onSubmit: values => {
-        // alert(JSON.stringify(values, null, 2));
-        navigation.navigate('createGoal');
+        return loginUser(values);
       },
     });
-    // console.log("here-login", values)
+    const loginUser = (values) => {
+        dispatch(authActions.loginAction(values));
+        return;
+    }
     return(
     <View>
         <View style={styles.formView}>

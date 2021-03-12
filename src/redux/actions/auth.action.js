@@ -1,4 +1,4 @@
-import { SET_LOGIN_STATE } from '../constants/auth.constant';
+import { SET_LOGIN_STATE, SET_GOAL_STATE } from '../constants/auth.constant';
 
 const setLoginState = (loginData) => {
     return {
@@ -15,7 +15,15 @@ function loginAction (data){
     }
     function success(user) { return { type: SET_LOGIN_STATE, user } }
 }
+
+function setFirstGoal (data){
+    console.log(data);
+    return dispatch => {
+        dispatch({ type: SET_GOAL_STATE});
+    }
+}
 export default actions = {
     setLoginState,
-    loginAction
+    loginAction,
+    setFirstGoal
 }

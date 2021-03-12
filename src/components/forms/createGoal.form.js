@@ -3,18 +3,25 @@ import { View, StyleSheet } from 'react-native';
 import { useFormik } from 'formik';
 import { FormButton, FormInput, FormDate } from './form.component';
 import { Donemark } from '../icons.component';
+import { useDispatch } from 'react-redux';
+import authAction from '../../redux/actions/auth.action';
 
 const CreateGoalForm = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false);
+    const dispatch = useDispatch();
     const { handleBlur, handleChange, handleSubmit, values} = useFormik({
       initialValues: {
         goal: '',
         date: ''
       },
       onSubmit: values => {
-        alert(JSON.stringify(values, null, 2));
+        // alert(JSON.stringify(values, null, 2));
+        return createGoal(values);
       },
     });
+    const createGoal = (values) => {
+        dispatch(authAction.setFirstGoal(values));
+    }
     return(
     <View>
         <View style={styles.formView}>

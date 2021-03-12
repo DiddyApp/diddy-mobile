@@ -25,13 +25,10 @@ const LoginForm = ({ navigation }) => {
         password: ''
       },
       onSubmit: values => {
-        // Login(values);
-        return loginUser(); 
-        // alert(JSON.stringify(values, null, 2));
-        // navigation.navigate('createGoal');
+        return loginUser(values);
       },
     });
-    const loginUser = () => {
+    const loginUser = (values) => {
         dispatch(authActions.loginAction(values));
         return;
     }
