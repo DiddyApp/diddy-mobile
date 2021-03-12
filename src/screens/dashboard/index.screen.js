@@ -15,8 +15,8 @@ const dashboardScreen = ({ navigation }) => {
   }
   return (
     <View style={styles.container}>
-      <PageView>
-        
+      <PageView navigation={navigation}>
+        <Text>Your Goals</Text>
       </PageView>
     </View>
   );

@@ -3,13 +3,13 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import FooterNavigator from './footer.menu';
 import MainHeader from './headers/main.header';
 
-const PageView = ({Component}) =>{ 
+const PageView = ({navigation, children}) =>{
     return(
         <View style={styles.container}>
-            <MainHeader />
+            <MainHeader navigation={navigation}/>
             <View style={{flex: 5, backgroundColor: '#EFF0F2'}}>
                 <ScrollView>
-                    {Component}  
+                    {children}  
                 </ScrollView>
             </View>
             <FooterNavigator />

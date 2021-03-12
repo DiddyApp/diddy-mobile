@@ -16,6 +16,14 @@ const mainRoutes= [
   { 
     name: 'dashBoard',
     component: dashboardScreen
+  },
+  { 
+    name: 'tasks',
+    component: dashboardScreen
+  },
+  { 
+    name: 'history',
+    component: dashboardScreen
   }
 ];
 
