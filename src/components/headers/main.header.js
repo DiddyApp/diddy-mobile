@@ -2,23 +2,16 @@ import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 import { width, scale, verticalScale } from '../../utils/scale';
 import { NotifiIcon } from '../icons.component';
-import {useRoute} from '@react-navigation/native';
 
 
 const naviLinks = [
-  { title: 'Goals', routeName: 'dashBoard' },
+  { title: 'Goals', routeName: 'goals' },
   { title: 'Tasks', routeName: 'tasks' },
   { title: 'History', routeName: 'history' },
 ]
-const Header = ({navigation}) => {
-  const route = useRoute();
-  console.log(route.name);
-  useEffect(()=>{ 
-    // console.log('sdsdsd', navigation);
-  }, []);
-
+const Header = ({active, setActive}) => {
   navigateTo = (route) => {
-    return navigation.navigate(route);
+    // return setActive(route);
   }
   return (
     <View style={styles.container}>
@@ -33,8 +26,8 @@ const Header = ({navigation}) => {
       <View style={{ flexDirection: 'row', backgroundColor:'#333', width: scale(313), height: verticalScale(34), borderRadius: 50 }}>
        {naviLinks.map((link, i) =>
         <TouchableHighlight  onPress={()=>navigateTo(link.routeName) }>
-          <View key={i} style={link.routeName===route.name ? {...styles.pills, ...styles.active} : {...styles.pills, ...styles.unactive}}>
-            <Text style={link.routeName===route.name ? {...styles.pillsText, ...styles.active}:{...styles.pillsText, ...styles.unactive}}>{link.title}</Text>
+          <View key={i} style={link.routeName===active ? {...styles.pills, ...styles.active} : {...styles.pills, ...styles.unactive}}>
+            <Text style={link.routeName===active ? {...styles.pillsText, ...styles.active}:{...styles.pillsText, ...styles.unactive}}>{link.title}</Text>
           </View>
         </TouchableHighlight>)}
       </View>      

@@ -12,7 +12,7 @@ const PageView = ({navigation, children}) =>{
                     {children}  
                 </ScrollView>
             </View>
-            <FooterNavigator />
+            {/* <FooterNavigator /> */}
         </View>
     )
 }
